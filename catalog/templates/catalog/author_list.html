@@ -1,0 +1,10 @@
+{% extends 'base_generic.html' %}
+{% block content %}
+<h3><a href="{% url 'author_create' %}">creat a new author</a></h3>
+{% for author in author_list %}
+<div class="container">
+    <p><strong>Firstname:</strong><a href="{{author.get_absolute_url}}">{{author.first_name}}</a< /p>
+
+</div>
+{% endfor %}
+{% endblock content %}
