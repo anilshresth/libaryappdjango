@@ -11,7 +11,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 
 
-@login_required
+# @login_required
 def index(request):
     '''view function for the homepage of the site'''
     # generate the count of some main objects
